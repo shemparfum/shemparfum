@@ -231,8 +231,9 @@
 
     /* ─── STORY SECTION ─── */
     .story-logo-img{
-      width: 500px;
-      height: 500px;
+      width: 100%;
+      max-width: 500px;
+      height: auto;
       object-fit: contain;
       display: block;
     }
@@ -240,12 +241,14 @@
     .story-section {
       display: grid; grid-template-columns: 1fr 1fr;
       background: var(--dark-soft); color: var(--white); min-height: 500px;
+      overflow: hidden;
     }
     .story-visual {
       background: var(--dark); 
       display: flex; 
       align-items: center; 
       justify-content: center;
+      overflow: hidden;
     }
     .story-text {
       padding: 5rem;
@@ -995,10 +998,12 @@
   /* ── STORY SECTION ── */
   .story-section {
     grid-template-columns: 1fr;
+    overflow: hidden;
   }
   .story-visual {
-    min-height: 220px;
+    min-height: 260px;
     padding: 2rem;
+    width: 100%;
   }
   .story-logo-img {
     width: 100%;
@@ -1007,9 +1012,16 @@
   }
   .story-text {
     padding: 2.5rem 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
   }
   .story-title {
     font-size: 2rem;
+    word-break: break-word;
+  }
+  .story-desc {
+    font-size: 13px;
+    word-break: break-word;
   }
 
   /* ── INSTAGRAM FEED ── */
