@@ -1069,11 +1069,20 @@
 
   /* ── FOOTER ── */
   footer {
-    padding: 3rem 1.5rem 1.5rem;
+    padding: 2.5rem 1.2rem 1.5rem;
   }
   .footer-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+  }
+  .footer-brand-name {
+    font-size: 1.4rem;
+  }
+  .footer-desc {
+    max-width: 100%;
+  }
+  .footer-col h4 {
+    margin-top: 0.5rem;
   }
   .footer-bottom {
     flex-direction: column;
@@ -1081,7 +1090,9 @@
     text-align: center;
   }
   .map-container {
-    grid-column: 1 / -1;
+    grid-column: 1;
+    margin-top: 0;
+    height: 220px;
   }
 }
 
